@@ -3,38 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Martinez Insurance Agency - SMS Privacy Policy</title>
+    <title>Nick Martinez Insurance Agency - SMS Opt-In</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #f9f9f9;
         }
         header {
-            background-color: #0056a6;
+            background: #0073e6;
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
         main {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
             padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        section {
-            margin-bottom: 2rem;
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 1rem;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
         }
         footer {
-            background-color: #f4f4f4;
             text-align: center;
             padding: 1rem 0;
-            font-size: 0.9rem;
+            background: #f1f1f1;
+            margin-top: 2rem;
         }
-        a {
-            color: #0056a6;
+        footer a {
+            color: #0073e6;
             text-decoration: none;
         }
-        a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
@@ -42,48 +65,25 @@
 <body>
     <header>
         <h1>Nick Martinez Insurance Agency</h1>
-        <p>Your trusted partner in protecting what matters most.</p>
     </header>
-
     <main>
-        <section>
-            <h2>Privacy Policy</h2>
-            <p>At Nick Martinez Insurance Agency, we take your privacy seriously. Below is an overview of how we handle your information:</p>
-            <ul>
-                <li>We collect your contact details (e.g., phone number, email) solely for communication purposes related to our services.</li>
-                <li>Your information will never be sold or shared with third parties without your explicit consent, except as required by law.</li>
-                <li>You can opt out of receiving SMS messages at any time by replying "STOP" to any message.</li>
-                <li>For detailed information, please review our <a href="#">full privacy policy</a>.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Call to Action (CTA) Information</h2>
-            <p>To receive updates, reminders, and important information via SMS:</p>
-            <ol>
-                <li>Text <strong>"INSUREME"</strong> to <strong>12345</strong> to subscribe to our SMS notifications.</li>
-                <li>Message and data rates may apply. Check with your carrier for details.</li>
-                <li>You will receive a confirmation message upon successful subscription.</li>
-            </ol>
-            <p>For assistance or questions, please contact us at <a href="mailto:nmartinez3@farmersagent.com">nmartinez3@farmersagent.com</a> or call (817) 887-9043.</p>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need support, please reach out to us:</p>
-            <address>
-                <strong>Nick Martinez Insurance Agency</strong><br>
-                8008 Camp Bowie West #101<br>
-                Fort Worth, TX 76116<br>
-                Phone: (817) 887-9043<br>
-                Email: <a href="mailto:nmartinez3@farmersagent.com">nmartinez3@farmersagent.com</a>
-            </address>
-        </section>
+        <h2>Subscribe to SMS Notifications</h2>
+        <p>Stay informed with important updates, reminders, and notifications from Nick Martinez Insurance Agency. Please fill out the form below to opt in.</p>
+        <form action="/submit" method="post">
+            <label>
+                <input type="checkbox" name="sms_consent" required>
+                I consent to receive SMS from Nick Martinez Insurance Agency. Reply STOP to opt-out; Reply HELP for support; Message and data rates apply; Messaging frequency may vary. 
+                Visit our <a href="/privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="/terms-of-service.html" target="_blank">Terms of Service</a>.
+            </label>
+            <button type="submit">Submit</button>
+        </form>
     </main>
-
     <footer>
-        <p>&copy; 2025 Nick Martinez Insurance Agency. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>
+            © 2025 Nick Martinez Insurance Agency. 
+            <a href="/privacy-policy.html" target="_blank">Privacy Policy</a> | 
+            <a href="/terms-of-service.html" target="_blank">Terms of Service</a>
+        </p>
     </footer>
 </body>
 </html>
