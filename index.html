@@ -19,33 +19,12 @@
             text-align: center;
         }
         main {
-            max-width: 600px;
+            max-width: 800px;
             margin: 2rem auto;
             background: white;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-bottom: 1rem;
-        }
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        button {
-            background: #0073e6;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #005bb5;
         }
         footer {
             text-align: center;
@@ -67,16 +46,42 @@
         <h1>Nick Martinez Insurance Agency</h1>
     </header>
     <main>
-        <h2>Subscribe to SMS Notifications</h2>
-        <p>Stay informed with important updates, reminders, and notifications from Nick Martinez Insurance Agency. Please fill out the form below to opt in.</p>
-        <form action="/submit" method="post">
-            <label>
-                <input type="checkbox" name="sms_consent" required>
-                I consent to receive SMS from Nick Martinez Insurance Agency. Reply STOP to opt-out; Reply HELP for support; Message and data rates apply; Messaging frequency may vary. 
-                Visit our <a href="https://35905m.github.io/Contact-me/privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="https://35905m.github.io/Contact-me/terms-of-service.html" target="_blank">Terms of Service</a>.
-            </label>
-            <button type="submit">Submit</button>
-        </form>
+        <h2>Opt-In for SMS Notifications</h2>
+        <p>Stay updated with important notifications from Nick Martinez Insurance Agency. Please fill out the form below to opt-in:</p>
+
+        <!-- Wufoo Form Embed -->
+        <div id="wufoo-ss91fpq1vvj84t">
+            Fill out my <a href="https://nickmartinezagency.wufoo.com/forms/ss91fpq1vvj84t">online form</a>.
+        </div>
+        <script type="text/javascript">
+            var ss91fpq1vvj84t;
+            (function(d, t) {
+                var s = d.createElement(t),
+                    options = {
+                        'userName': 'nickmartinezagency',
+                        'formHash': 'ss91fpq1vvj84t',
+                        'autoResize': true,
+                        'height': '560',
+                        'async': true,
+                        'host': 'wufoo.com',
+                        'header': 'show',
+                        'ssl': true
+                    };
+                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+                s.onload = s.onreadystatechange = function() {
+                    var rs = this.readyState;
+                    if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                    try {
+                        ss91fpq1vvj84t = new WufooForm();
+                        ss91fpq1vvj84t.initialize(options);
+                        ss91fpq1vvj84t.display();
+                    } catch (e) {}
+                };
+                var scr = d.getElementsByTagName(t)[0],
+                    par = scr.parentNode;
+                par.insertBefore(s, scr);
+            })(document, 'script');
+        </script>
     </main>
     <footer>
         <p>
