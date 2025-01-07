@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nick Martinez Insurance Agency - Your trusted insurance partner in Fort Worth and Grand Prairie, Texas.">
-    <title>Nick Martinez Insurance Agency</title>
+    <title>Nick Martinez Insurance Agency - SMS Opt-In</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
         }
         header, footer {
-            background-color: #2a9df4;
+            background-color: #0073e6;
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 1rem 0;
         }
         main {
-            padding: 20px;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             line-height: 1.6;
         }
         .section {
             margin-bottom: 20px;
         }
         .section h2 {
-            color: #2a9df4;
+            color: #0073e6;
         }
         .contact-info, .sample-messages, .sms-policy {
             border: 1px solid #ccc;
@@ -38,6 +44,13 @@
         }
         .contact-info ul li, .sample-messages ul li {
             margin: 5px 0;
+        }
+        footer a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -83,6 +96,45 @@
             <p>Customers provide consent during the policy sign-up process, either through an online form or in-person agreement. Proof of consent is documented in our records.</p>
         </div>
 
+        <div class="section">
+            <h2>Opt-In for SMS Notifications</h2>
+            <p>Stay updated with important notifications from Nick Martinez Insurance Agency. Please fill out the form below to opt-in:</p>
+
+            <!-- Wufoo Form Embed -->
+            <div id="wufoo-ss91fpq1vvj84t">
+                Fill out my <a href="https://nickmartinezagency.wufoo.com/forms/ss91fpq1vvj84t">online form</a>.
+            </div>
+            <script type="text/javascript">
+                var ss91fpq1vvj84t;
+                (function(d, t) {
+                    var s = d.createElement(t),
+                        options = {
+                            'userName': 'nickmartinezagency',
+                            'formHash': 'ss91fpq1vvj84t',
+                            'autoResize': true,
+                            'height': '560',
+                            'async': true,
+                            'host': 'wufoo.com',
+                            'header': 'show',
+                            'ssl': true
+                        };
+                    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+                    s.onload = s.onreadystatechange = function() {
+                        var rs = this.readyState;
+                        if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                        try {
+                            ss91fpq1vvj84t = new WufooForm();
+                            ss91fpq1vvj84t.initialize(options);
+                            ss91fpq1vvj84t.display();
+                        } catch (e) {}
+                    };
+                    var scr = d.getElementsByTagName(t)[0],
+                        par = scr.parentNode;
+                    par.insertBefore(s, scr);
+                })(document, 'script');
+            </script>
+        </div>
+
         <div class="section sample-messages">
             <h2>Sample Messages</h2>
             <ul>
@@ -93,7 +145,11 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 Nick Martinez Insurance Agency. All rights reserved.</p>
+        <p>
+            &copy; 2025 Nick Martinez Insurance Agency. 
+            <a href="https://35905m.github.io/Contact-me/privacy-policy.html" target="_blank">Privacy Policy</a> | 
+            <a href="https://35905m.github.io/Contact-me/terms-of-service.html" target="_blank">Terms of Service</a>
+        </p>
     </footer>
 </body>
 </html>
