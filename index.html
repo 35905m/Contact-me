@@ -47,21 +47,39 @@
         <h2>Opt-In for SMS Notifications</h2>
         <p>Stay updated with important notifications from Nick Martinez Insurance Agency. Please fill out the form below to opt-in:</p>
 
-        <!-- Form with Invisible reCAPTCHA -->
-        <form id="sms-optin-form" action="/submit-form" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <br><br>
-            <!-- Invisible reCAPTCHA -->
-            <button class="g-recaptcha" 
-                    data-sitekey="6Lc7574qAAAAANeOul_zRzCZ8XGIT5_X4ZQn4zlq" 
-                    data-callback="onSubmit">
-                Submit
-            </button>
-        </form>
+        <!-- Wufoo Form Embed -->
+        <div id="wufoo-ss91fpq1vvj84t">
+            Fill out my <a href="https://nickmartinezagency.wufoo.com/forms/ss91fpq1vvj84t">online form</a>.
+        </div>
+        <script type="text/javascript">
+            var ss91fpq1vvj84t;
+            (function(d, t) {
+                var s = d.createElement(t),
+                    options = {
+                        'userName': 'nickmartinezagency',
+                        'formHash': 'ss91fpq1vvj84t',
+                        'autoResize': true,
+                        'height': '560',
+                        'async': true,
+                        'host': 'wufoo.com',
+                        'header': 'show',
+                        'ssl': true
+                    };
+                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+                s.onload = s.onreadystatechange = function() {
+                    var rs = this.readyState;
+                    if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                    try {
+                        ss91fpq1vvj84t = new WufooForm();
+                        ss91fpq1vvj84t.initialize(options);
+                        ss91fpq1vvj84t.display();
+                    } catch (e) {}
+                };
+                var scr = d.getElementsByTagName(t)[0],
+                    par = scr.parentNode;
+                par.insertBefore(s, scr);
+            })(document, 'script');
+        </script>
     </main>
     <footer>
         <p>
@@ -70,12 +88,5 @@
             <a href="https://35905m.github.io/Contact-me/terms-of-service.html" target="_blank">Terms of Service</a>
         </p>
     </footer>
-
-    <script>
-        // reCAPTCHA callback function
-        function onSubmit(token) {
-            document.getElementById("sms-optin-form").submit();
-        }
-    </script>
 </body>
 </html>
